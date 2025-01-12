@@ -1,0 +1,982 @@
+body{
+    font-size: 13px;
+    font-family:  "Parkinsans", sans-serif;
+    background-color: #e6e6e6;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 833px) {
+.sideme{
+    display:none;
+}
+.listedme{
+  display:none;
+}
+.desktopnav{
+    display:none !important;
+}
+
+
+
+.home,.hobby,.work,.adventure{
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Covers the entire viewport width */
+    height: 96px; /* Matches the height of .header-container */
+    z-index: 1000; /* Ensures the header is above other elements */
+    background-color: #B0B0B0; /* Same as container background */
+}
+.header-container{
+    
+    align-items: center;
+    background-color:#B0B0B0;
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+    height: 96px;
+    
+}   
+.header-container nav{
+    align-items: center;
+    justify-content:flex-start;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+    
+
+
+.headerlogo{
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    padding-bottom: 0px;
+    margin-bottom: 0PX;
+    margin-top: 2PX;
+    margin-left: 10px;
+}
+
+.footerlogo{
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.copyright{
+    font-size: 10px;
+}
+.menuimg{
+    width:30px;
+    height:24px;
+    background-color:#B0B0B0;
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width:70%;
+    margin: 0; /* Remove margins */
+}
+
+
+
+.education{
+    margin-left: auto;
+
+}
+
+.menubutton{
+    background-color: #B0B0B0;
+    border:none;
+    position:relative
+}
+.menubutton:hover{
+    cursor: pointer;
+}
+
+
+.lil {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Adjust based on button size */
+    left: 0;
+    background-color:#B0B0B0;
+    color: rgb(17, 16, 16);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(129, 123, 123, 0.2);
+    overflow: hidden;
+    width: 200px;
+    display: none;
+}
+
+/* Menu Items */
+.lil li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #B0B0B0;
+    text-align: center;
+}
+
+.lil li:last-child {
+    border-bottom: none;
+}
+
+.lil li a {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    font-size: 16px;
+}
+
+.lil li a:hover {
+    background-color: #555;
+}
+
+
+.pagesmenu:focus-within .lil {
+    display: block;
+}
+.pagesmenu {
+    position: relative;
+    display: inline-block; /* Make sure the container is inline with other content */
+    outline: none;
+}
+.contactme {
+        position: relative;
+        display: inline-block; /* Make sure the container is inline with other content */
+    } 
+    
+.lil {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 40px; /* Position the dropdown below the button */
+        left: 0; /* Align left edge of menu with button */
+        background-color: #B0B0B0;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 100px; /* Adjust width as needed */
+        display: none; /* Hidden by default */
+    }
+    
+    /* Menu Items */
+    .lil li {
+        padding: 10px 14px;
+        border-bottom: 1px solid#B0B0B0;
+        text-align: center;
+    }
+    
+    .lil li:last-child {
+        border-bottom: none;
+    }
+    
+    .lil li a {
+        text-decoration: none;
+        
+        font-size: 16px;
+    }
+    
+    .lil li a:hover {
+        background-color: #555;
+    }
+    
+    /* Show Menu When Focused */
+    .contactme:focus-within .lil {
+        display: block; /* Make the list visible when the container gets focus */
+    }
+   
+
+h3{
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.intro{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+footer{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    position:fixed;
+    bottom:0px;
+    gap: 10px;
+    background-color: #e6e6e6;
+    
+}
+/* General Table Styling */
+
+
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left:10px;
+    margin-top: 40px;
+}
+.educationpage{
+   padding: 0 10px; /* Add padding on the left and right */
+    margin-left: 10px;
+    margin-bottom: 20%; /* Adjust as needed */
+    MARGIN-TOP:120PX ;
+}
+
+table {
+    width: 70%; /* Fixed width of 368px */
+    height: 192px; /* Fixed height of 192px */
+    border-collapse: collapse; /* Collapse borders between cells */
+    margin-bottom: 20px; /* Space between tables */
+    margin:0; /* Remove margin-left for smaller screens */
+    box-sizing: border-box; /* Prevents overflow and ensures proper padding */
+}
+
+/* Table header cell */
+th {
+   
+    color: black; /* Black text color */
+    text-align: left;
+   
+    font-size: 13px;
+    border: 1px solid black; /* Border for header */
+}
+
+/* Table data cell */
+td {
+    font-size: 13px; /* Adjust font size for data */
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Add padding for spacing */
+    border: 1px solid black; /* Define cell borders */
+    vertical-align: middle; /* Center content vertically */
+}
+
+/* Table borders */
+table, th, td {
+    border: 1px solid black; /* Black border for the table and its cells */
+}
+}
+
+
+@media(max-width:1193px)and (orientation:landscape){
+    .sideme{
+        display:none;
+    }
+    .listedme{
+      display:none;
+    }
+    .desktopnav{
+        display:none !important;
+    }
+    
+    
+    
+    .home,.hobby,.work,.adventure{
+        display: none;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Covers the entire viewport width */
+        height: 96px; /* Matches the height of .header-container */
+        z-index: 1000; /* Ensures the header is above other elements */
+        background-color: #B0B0B0; /* Same as container background */
+    }
+    .header-container{
+        
+        align-items: center;
+        background-color:#B0B0B0;
+        display:flex;
+        justify-content:flex-start;
+        gap:20px;
+        height: 96px;
+        
+    }   
+    .header-container nav{
+        align-items: center;
+        justify-content:flex-start;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+        
+    
+    
+    .headerlogo{
+        width:60px;
+        height:60px;
+        border-radius:30px;
+        padding-bottom: 0px;
+        margin-bottom: 0PX;
+        margin-top: 2PX;
+        margin-left: 10px;
+    }
+    
+    .footerlogo{
+        width:26px;
+        height: 26px;
+        border-radius: 13px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .menuimg{
+        width:30px;
+        height:24px;
+        background-color:#B0B0B0;
+    
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width:70%;
+        margin: 0; /* Remove margins */
+    }
+    
+    
+    
+    .education{
+        margin-left: auto;
+    
+    }
+    
+    .menubutton{
+        background-color: #B0B0B0;
+        border:none;
+        position:relative
+    }
+    .menubutton:hover{
+        cursor: pointer;
+    }
+    
+    
+    .lil {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%; /* Adjust based on button size */
+        left: 0;
+        background-color:#B0B0B0;
+        color: rgb(17, 16, 16);
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(129, 123, 123, 0.2);
+        overflow: hidden;
+        width: 200px;
+        display: none;
+    }
+    
+    /* Menu Items */
+    .lil li {
+        padding: 12px 16px;
+        border-bottom: 1px solid #B0B0B0;
+        text-align: center;
+    }
+    
+    .lil li:last-child {
+        border-bottom: none;
+    }
+    
+    .lil li a {
+        text-decoration: none;
+        color: rgb(32, 31, 31);
+        font-size: 16px;
+    }
+    
+    .lil li a:hover {
+        background-color: #555;
+    }
+    
+    
+    .pagesmenu:focus-within .lil {
+        display: block;
+    }
+    .pagesmenu {
+        position: relative;
+        display: inline-block; /* Make sure the container is inline with other content */
+        outline: none;
+    }
+    .contactme {
+            position: relative;
+            display: inline-block; /* Make sure the container is inline with other content */
+        } 
+        
+    .lil {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 40px; /* Position the dropdown below the button */
+            left: 0; /* Align left edge of menu with button */
+            background-color: #B0B0B0;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 100px; /* Adjust width as needed */
+            display: none; /* Hidden by default */
+        }
+        
+        /* Menu Items */
+        .lil li {
+            padding: 10px 14px;
+            border-bottom: 1px solid#B0B0B0;
+            text-align: center;
+        }
+        
+        .lil li:last-child {
+            border-bottom: none;
+        }
+        
+        .lil li a {
+            text-decoration: none;
+            color:rgba(0, 0, 0);
+            font-size: 16px;
+        }
+        
+        .lil li a:hover {
+            background-color: #555;
+        }
+        
+        /* Show Menu When Focused */
+        .contactme:focus-within .lil {
+            display: block; /* Make the list visible when the container gets focus */
+        }
+       
+    
+    h3{
+        font-size: 40px;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .intro{
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    footer{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        position:fixed;
+        bottom:0px;
+        gap: 10px;
+        background-color: #e6e6e6;
+        
+    }
+    /* General Table Styling */
+    
+    
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-left:10px;
+        margin-top: 40px;
+    }
+    .educationpage{
+       padding: 0 10px; /* Add padding on the left and right */
+        margin-left: 10px;
+        margin-bottom: 20%; /* Adjust as needed */
+        MARGIN-TOP:120PX ;
+    }
+    
+    table {
+        width: 70%; /* Fixed width of 368px */
+        height: 192px; /* Fixed height of 192px */
+        border-collapse: collapse; /* Collapse borders between cells */
+        margin-bottom: 20px; /* Space between tables */
+        margin:0; /* Remove margin-left for smaller screens */
+        box-sizing: border-box; /* Prevents overflow and ensures proper padding */
+    }
+    
+    /* Table header cell */
+    th {
+       
+        color: black; /* Black text color */
+        text-align: left;
+       
+        font-size: 13px;
+        border: 1px solid black; /* Border for header */
+    }
+    
+    /* Table data cell */
+    td {
+        font-size: 13px; /* Adjust font size for data */
+        text-align: left; /* Align text to the left */
+        padding: 8px; /* Add padding for spacing */
+        border: 1px solid black; /* Define cell borders */
+        vertical-align: middle; /* Center content vertically */
+    }
+    
+    /* Table borders */
+    table, th, td {
+        border: 1px solid black; /* Black border for the table and its cells */
+    }  
+}
+    
+@media screen and (min-width: 834px) and (max-width: 1193px)  and (orientation: portrait){
+        
+        .sideme {
+            position: fixed; /* Keeps the sidebar fixed to the left side */
+            top: 96px; /* Aligns the top of the sidebar with the header */
+            left: 0; /* Places the sidebar on the left side of the screen */
+            height: 553px; /* Set the height of the sidebar */
+            width: 78px; /* Set the width of the sidebar */
+            background-color:#B0B0B0; /* Sidebar background color */
+            padding: 0 40px; /* Adds 40px padding to the left and right */
+            display: flex;
+            flex-direction: column; /* Align the items vertically */
+            justify-content: center; /* Centers the items vertically */
+            align-items: center; /* Centers the icons horizontally */
+            gap: 20px; 
+            border-bottom-right-radius:25px;
+            
+        }
+        
+        .sideme a img {
+            width: 42px; /* Set a fixed width for icons */
+            height: 42px; /* Set a fixed height for icons */
+        }
+        
+        
+        
+        .listedme{
+          display:none;
+        }
+        .desktopnav{
+            display:none !important;
+        }
+        
+        
+        
+        .education,.work,.hobby,.adventure{
+            display: none;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Covers the entire viewport width */
+            height: 96px; /* Matches the height of .header-container */
+            z-index: 1000; /* Ensures the header is above other elements */
+            background-color: #B0B0B0; /* Same as container background */
+        }
+        
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            height: 100%; /* Takes the full height of the header */
+            padding: 0 20px; /* Adds horizontal padding */
+            margin-left: 30px
+        }
+        
+        /* Header logo */
+        .headerlogo {
+            width: 67px;
+            height: 67px;
+            border-radius: 50%; /* Perfect circle */
+            margin: 2px 0 0 0; /* Adjust top margin */
+        }
+        .footerlogo{
+            width:40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .copyright{
+            font-size: 10px;
+        }
+        .menuimg{
+            width:35px;
+            height:27px;
+            background-color:#B0B0B0;
+        
+        }
+        .contactme{
+            display: none;
+        }
+        nav{
+            display:flex;
+            flex-direction:row;
+            margin-top:50px;
+            width:80%;
+            margin-right:18px
+            
+        }
+        
+        
+        
+        .home{
+            margin-left: auto;
+        
+        }
+        
+        .menubutton{
+            background-color: #B0B0B0;
+            border:none;
+            position:relative
+        }
+        .menubutton:hover{
+            cursor: pointer;
+        }
+        
+        
+        
+        
+        /* Menu Items */
+        .lil li {
+            padding: 12px 16px;
+            border-bottom: 1px solid #B0B0B0;
+            text-align: center;
+        }
+        
+        .lil li:last-child {
+            border-bottom: none;
+        }
+        
+        .lil li a {
+            text-decoration: none;
+            color: rgb(32, 31, 31);
+            font-size: 16px;
+        }
+        
+        .lil li a:hover {
+            background-color: #555;
+        }
+        
+        
+        .pagesmenu:focus-within .lil {
+            display: block;
+        }
+        .pagesmenu {
+            position: relative;
+            display: inline-block; /* Make sure the container is inline with other content */
+            outline: none;
+        }
+         
+            
+        .lil {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 40px; /* Position the dropdown below the button */
+                left: 0; /* Align left edge of menu with button */
+                background-color: #B0B0B0;
+                color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                width: 100px; /* Adjust width as needed */
+                display: none; /* Hidden by default */
+            }
+            
+            /* Menu Items */
+            .lil li {
+                padding: 10px 14px;
+                border-bottom: 1px solid#B0B0B0;
+                text-align: center;
+            }
+            
+            .lil li:last-child {
+                border-bottom: none;
+            }
+            
+            .lil li a {
+                text-decoration: none;
+                color: rgb(3, 3, 3);
+                font-size: 16px;
+            }
+            
+            .lil li a:hover {
+                background-color: #555;
+            }
+    
+        footer{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            position:fixed;
+            bottom:0px;
+            gap: 10px;
+            background-color: #D6CDC7;
+            
+        }
+        h3{
+            font-size: 40px;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .educationpage{
+            padding: 20px; /* Add padding around the content */
+            margin-bottom: 15%;
+            margin-left: 20%; /* Center the main content */
+            margin-top:120px;
+         }
+         
+         table {
+             width: 70%; /* Fixed width of 368px */
+             height: 192px; /* Fixed height of 192px */
+             border-collapse: collapse; /* Collapse borders between cells */
+             margin-bottom: 20px; /* Space between tables */
+             margin:0; /* Remove margin-left for smaller screens */
+             box-sizing: border-box; /* Prevents overflow and ensures proper padding */
+         }
+         
+         /* Table header cell */
+         th {
+            
+             color: black; /* Black text color */
+             text-align: left;
+            
+             font-size: 13px;
+             border: 1px solid black; /* Border for header */
+         }
+         
+         /* Table data cell */
+         td {
+             font-size: 13px; /* Adjust font size for data */
+             text-align: left; /* Align text to the left */
+             padding: 8px; /* Add padding for spacing */
+             border: 1px solid black; /* Define cell borders */
+             vertical-align: middle; /* Center content vertically */
+         }
+         
+         /* Table borders */
+         table, th, td {
+             border: 1px solid black; /* Black border for the table and its cells */
+         } 
+    }
+    @media screen and (min-width:1194px) and (max-height:834px) and (orientation: landscape),
+    (min-width: 1194px) 
+     {
+        .sideme {
+            position: fixed; /* Keeps the sidebar fixed to the left side */
+            top: 96px; /* Aligns the top of the sidebar with the header */
+            left: 0; /* Places the sidebar on the left side of the screen */
+            height: 70%; /* Set the height of the sidebar */
+            width:7%; /* Set the width of the sidebar */
+            background-color:#B0B0B0; /* Sidebar background color */
+            padding: 0 40px; /* Adds 40px padding to the left and right */
+            display: flex;
+            flex-direction: column; /* Align the items vertically */
+            justify-content: center; /* Centers the items vertically */
+            align-items: center; /* Centers the icons horizontally */
+            gap: 20px; 
+            border-bottom-right-radius:25px;
+            
+        }
+        
+        .sideme a img {
+            width: 42px; /* Set a fixed width for icons */
+            height: 42px; /* Set a fixed height for icons */
+        }
+        
+        
+        
+        .listedme{
+          display:none;
+        }
+        .desktopnav ol {
+            display: flex; /* Arrange navigation items horizontally */
+            list-style: none; /* Remove default list styling */
+            
+          }.desktopnav{
+            margin-left: auto;
+        }
+        .desktopnav li {
+            margin-left: 20px; /* Add spacing between navigation items */
+          }
+        .desktopnav a {
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Default link color */
+            font-size: 16px; /* Font size */
+            
+          }
+        .pagesmenu,.contactme{
+            display: none;
+        }  
+
+        .desktopnav a.naveducation {
+            text-decoration: underline;
+          }
+        
+        .education,.work,.hobby,.home,.adventure{
+            display: none;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Covers the entire viewport width */
+            height: 96px; /* Matches the height of .header-container */
+            z-index: 1000; /* Ensures the header is above other elements */
+            background-color: #B0B0B0; /* Same as container background */
+        }
+        
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            height: 100%; /* Takes the full height of the header */
+            padding: 0 20px; /* Adds horizontal padding */
+            margin-left: 30px
+        }
+        
+        /* Header logo */
+        .headerlogo {
+            width: 67px;
+            height: 67px;
+            border-radius: 50%; /* Perfect circle */
+            margin: 2px 0 0 0; /* Adjust top margin */
+        }
+        .footerlogo{
+            width:40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .copyright{
+            font-size: 10px;
+        }
+        
+        .contactme{
+            display: none;
+        }
+        nav{
+            display:flex;
+            flex-direction:row;
+            margin-top:50px;
+            width:80%;
+            margin-right:18px
+            
+        }
+        
+        
+        footer{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            position:fixed;
+            bottom:0px;
+            gap: 10px;
+            background-color: #D6CDC7;
+            
+        }
+        .educationpage {
+            padding: 20px; /* Add padding around the content */
+            margin-bottom: 15%;
+            margin-left: 16%; /* Center the main content */
+            margin-top:120px;
+            
+        }
+         h3{
+            font-size: 40px;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        h2{
+            margin-top: 7vh;
+            font-size: 24px;
+
+        }
+         
+         table {
+             width: 70%; /* Fixed width of 368px */
+             height: 192px; /* Fixed height of 192px */
+             border-collapse: collapse; /* Collapse borders between cells */
+             margin-bottom: 20px; /* Space between tables */
+             margin:0; /* Remove margin-left for smaller screens */
+             box-sizing: border-box; /* Prevents overflow and ensures proper padding */
+         }
+         
+         /* Table header cell */
+         th {
+            
+             color: black; /* Black text color */
+             text-align: left;
+            
+             font-size: 16px;
+             border: 1px solid black; /* Border for header */
+         }
+         
+         /* Table data cell */
+         td {
+             font-size: 13px; /* Adjust font size for data */
+             text-align: left; /* Align text to the left */
+             padding: 8px; /* Add padding for spacing */
+             border: 1px solid black; /* Define cell borders */
+             vertical-align: middle; /* Center content vertically */
+         }
+         
+         /* Table borders */
+         table, th, td {
+             border: 1px solid black; /* Black border for the table and its cells */
+         } 
+     }
+     @media  (min-height: 835px)and (min-width:1194px){
+        h3{
+            font-size:55px
+        }
+        th {
+          font-size: 18px;}
+        td{font-size:18px
+
+        }  
+          h2{
+            font-size:30px;
+          }
+          .sideme a img {
+            width: 75px; /* Set a fixed width for icons */
+            height: 60px; /* Set a fixed height for icons */
+        }
+        .headerlogo {
+            width: 117px;
+            height: 119px;}
+        header {
+            height:149px;}
+         .educationpage {
+                padding: 20px; /* Add padding around the content */
+                margin-bottom: 7%;
+                margin-left:vh;
+                MARGIN-TOP:18vh;
+               
+                
+            }
+            p{
+                font-size:18px
+            }
+            .copyright{
+                font-size: 12px;
+            }
+       }
+     
